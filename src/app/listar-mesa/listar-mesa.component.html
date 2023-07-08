@@ -1,0 +1,20 @@
+<h2>LISTADO DE MESA</h2>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Numero de Mesa</th>
+            <th scope="col">Mesa Pago</th>
+            <th scope="col">Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dato of mesa">
+            <td>{{ dato.numero_mesa }}</td>
+            <td>{{ dato.mesa_pago }}</td>
+            <td>
+                <button class="btn btn-danger mr-2" (click)="eliminarMesa(dato.mesa_pago)">Eliminar</button>
+                <button class="btn btn-warning" (click)="actualizarMesa(dato)">Editar</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

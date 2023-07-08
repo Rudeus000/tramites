@@ -1,0 +1,20 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text">Registro de Insumos</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+            <label for="">codigo</label>
+            <input type="text" class="form-control" name="codigo" id="codigo" [(ngModel)]="insumos.codigo">
+          </div>
+          <div class="form-group">
+            <label for="">suministros</label>
+            <input type="text" class="form-control" name="suministro"s id="suministro" [(ngModel)]="insumos.suministros">
+          </div>
+          <div class="form-group">
+            <label for="">tipo</label>
+            <input type="text" class="form-control" name="tipo" id="tipo" [(ngModel)]="insumos.tipo">
+          </div>
+          <button type="submit" class="btn btn-success">Registrar</button>
+        </form>
+  </div>
+
+

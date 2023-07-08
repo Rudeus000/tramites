@@ -1,0 +1,22 @@
+<h2 class="text-center mt-4 mb-3 text-primary">Listado de Clientes</h2>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th class="text-white bg-secondary">DNI</th>
+      <th class="text-white bg-secondary">RUC</th>
+      <th class="text-white bg-secondary">Razón Social</th>
+      <th class="text-white bg-secondary">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dato of cliente">
+      <td>{{ dato.dni }}</td>
+      <td>{{ dato.ruc }}</td>
+      <td>{{ dato.razon_social }}</td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminarCliente(dato.dni)">Eliminar</button>
+        <button class="btn btn-warning" (click)="actualizarCliente(dato)">Editar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

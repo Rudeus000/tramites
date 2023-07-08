@@ -1,0 +1,25 @@
+<div class="container">
+    <h2 class="text-center mt-4 mb-3">LISTADO DE INSUMOS</h2>
+    <table class="table table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="text-center">Código</th>
+          <th scope="col" class="text-center">Suministro</th>
+          <th scope="col" class="text-center">Tipo</th>
+          <th scope="col" class="text-center">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dato of insumos">
+          <td class="text-center">{{ dato.codigo }}</td>
+          <td class="text-center">{{ dato.suministros }}</td>
+          <td class="text-center">{{ dato.tipo }}</td>
+          <td class="text-center">
+            <button class="btn btn-outline-danger mr-2" (click)="eliminarInsumos(dato.codigo)">Eliminar</button>
+            <button class="btn btn-outline-warning" (click)="actualizarInsumos(dato)">Editar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

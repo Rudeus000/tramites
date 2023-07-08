@@ -1,0 +1,19 @@
+
+<h2>LISTADO DE INSUMOS</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>m_mesa</th>
+            <th>dni</th>
+        </tr>
+    </thead>
+    <tbody >
+        <tr *ngFor="let dato of insumos">
+           <td>{{dato.n_mesa}} </td>
+           <td>{{dato.dni}}</td>
+           <td> <button  class="btn btn-danger"  (click)=eliminarPersonal(dato.dni) style="margin-left: 10px;">Eliminar</button>
+            <button (click)="actualizarPersonal(dato)" class="btn btn-warning">Editar</button>  
+        </tr>
+    </tbody>
+</table>
+

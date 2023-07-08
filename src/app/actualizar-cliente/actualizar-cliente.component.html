@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center">Añadir Clientes</h2>
+      <form (submit)="actualizarCliente()">
+        <div class="form-group">
+          <label for="dni">DNI</label>
+          <input type="text" class="form-control" id="dni" [(ngModel)]="clienteEdicion.dni" name="dni">
+        </div>
+        <div class="form-group">
+          <label for="ruc">RUC</label>
+          <input type="text" class="form-control" id="ruc" [(ngModel)]="clienteEdicion.ruc" name="ruc">
+        </div>
+        <div class="form-group">
+          <label for="razon_social">Razón Social</label>
+          <input type="text" class="form-control" id="razon_social" [(ngModel)]="clienteEdicion.razon_social" name="razon_social">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+      </form>
+    </div>
+  </div>
+</div>

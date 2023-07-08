@@ -1,0 +1,24 @@
+<h2 class="text-primary">LISTADO DE USUARIO</h2>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">USER</th>
+      <th scope="col">PASSWORD</th>
+      <th scope="col">ROL</th>
+      <th scope="col">ACCIONES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dato of personal">
+      <td>{{ dato.dni }}</td>   
+      <td>{{ dato.nombre }}</td>
+      <td>{{ dato.direccion }}</td>
+      <td>{{ dato.carnet }}</td>
+      <td>
+        <button class="btn btn-danger mr-2" (click)="eliminarPersonal(dato.dni)">Eliminar</button>
+        <button class="btn btn-warning" (click)="actualizarPersonal(dato)">Editar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,29 @@
+<table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>COdigo</th>
+        <th>Telefono</th>
+        <th>Correo Institucional</th>
+        <th>Tipo de Institucion</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of producto">
+        <td>{{ producto.codigo }}</td>
+        <td>{{ producto.desayuno }}</td>
+        <td>{{ producto.almuerzo }}</td>
+        <td>{{ producto.cena}}</td>
+        <td>{{ producto.extra }}</td>
+        <td>{{ producto.bebidas }}</td>
+        <td>
+          <button  class="btn btn-danger"  (click)=eliminarProducto(producto.codigo) style="margin-left: 10px;">Eliminar</button>
+           <button (click)="actualizarProducto(producto)" class="btn btn-warning">Editar</button>
+          
+        </td> 
+      </tr>
+    </tbody>
+  </table>
+  

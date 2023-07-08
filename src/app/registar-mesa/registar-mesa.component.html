@@ -1,0 +1,16 @@
+<div class="col-md-6 offset-md-3">
+  <h2 class="text-center font-italic text-primary">Añadir Mesa</h2>
+  <form (ngSubmit)="onSubmit()" class="bg-light p-4">
+    <div class="form-group">
+      <label for="mesa_pago" class="font-italic text-success">Pago de Mesa</label>
+      <input type="text" class="form-control" name="mesa_pago" id="mesa_pago" [(ngModel)]="mesa.mesa_pago">
+    </div>
+    <div class="form-group">
+      <label for="numero_mesa" class="font-italic text-info">Numero de Mesa</label>
+      <input type="text" class="form-control" name="numero_mesa" id="numero_mesa" [(ngModel)]="mesa.numero_mesa">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Registrar</button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,30 @@
+<div class="col-md-6 offset-md-3" >
+  <h3>lista de productos</h3>
+<form (submit)="actualizarProducto()">
+  <div class="form-group">
+    <label for="codigo">Nombre</label>
+    <input type="text" class="form-control" id="codigo" [(ngModel)]="productoEdicion.codigo" name="codigo" readonly>
+  </div>
+  <div class="form-group">
+    <label for="desayuno">APELLIDO</label>
+    <input type="text" class="form-control" id="desayuno" [(ngModel)]="productoEdicion.desayuno" name="desayuno">
+  </div>
+  <div class="form-group">
+    <label for="almuerzo">CODIGO</label>
+    <input type="text" class="form-control" id="almuerzo" [(ngModel)]="productoEdicion.almuerzo" name="almuerzo">
+  </div>
+  <div class="form-group">
+    <label for="cena">OCUPACION</label>
+    <input type="text" class="form-control" id="cena" [(ngModel)]="productoEdicion.cena" name="cena">
+  </div>
+  <div class="form-group">
+      <label for="cena">Correo Institucional</label>
+      <input type="text" class="form-control" id="extra" [(ngModel)]="productoEdicion.extra" name="extra">
+  </div>
+  <div class="form-group">
+      <label for="bebidas">Tipo de Institucion</label>
+      <input type="text" class="form-control" id="bebidas" [(ngModel)]="productoEdicion.bebidas" name="bebidas">
+  </div>
+  <button type="submit" class="btn btn-primary">Actualizar</button>
+</form>
+</div>

@@ -1,0 +1,21 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text">Registro de Insumos</h2>
+    <form (submit)=" actualizarInsumos()">
+      <div class="form-group">
+            <label for="codigo">codigo</label>
+            <input type="text" class="form-control"  id="codigo" [(ngModel)]="insumoEdicion.codigo" name="codigo" readonly>
+          </div>
+          <div class="form-group">
+            <label for="suministro">suministros</label>
+            <input type="text" class="form-control"  id="suministro" [(ngModel)]="insumoEdicion.suministros" name="suministro">
+          </div>
+          <div class="form-group">
+            <label for="tipo">tipo</label>
+            <input type="text" class="form-control"  id="tipo" [(ngModel)]="insumoEdicion.tipo" name="tipo">
+          </div>
+          <button type="submit" class="btn btn-success">Registrar</button>
+        </form>
+  </div>
+
+
+

@@ -1,0 +1,18 @@
+<div class="col-md-6 offset-md-3">
+    <h2 class="text">Actualizar Mesa</h2>
+    <form (submit)="actualizarMesa()">
+        <div class="form-group">
+            <label for="numero_mesa">Numero de Mesa</label>
+            <input type="text" class="form-control"  id="numero_mesa" [(ngModel)]="mesaEdicion.numero_mesa" name="numero_mesa">
+          </div>
+         <div class="form-group">
+            <label for="mesa_pago">Pago de Mesa</label>
+            <input type="text" class="form-control" id="mesa_pago" [(ngModel)]="mesaEdicion.mesa_pago"  name="mesa_pago"readonly >
+          </div>
+          <button type="submit" class="btn btn-success">Registrar</button>
+        </form> 
+  </div>
+
+
+
+
